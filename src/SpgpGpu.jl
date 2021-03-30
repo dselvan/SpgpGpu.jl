@@ -1,5 +1,8 @@
 module SpgpGpu
 
-# Write your package code here.
+using Distances
+
+export sum_values
+include("predict.jl")
 
 end
