@@ -20,4 +20,5 @@ makedocs(;
 
 deploydocs(;
     repo="github.com/dselvan/SpgpGpu.jl",
+    devbranch="main"
 )
