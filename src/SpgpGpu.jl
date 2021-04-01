@@ -1,8 +1,11 @@
 module SpgpGpu
 
-using Distances
+using LinearAlgebra
 
-export sum_values
+export predict
 include("predict.jl")
+
+export kernel
+include("kernel.jl")
 
 end
