@@ -1,11 +1,14 @@
 module SpgpGpu
 
-using LinearAlgebra
+using LinearAlgebra, Tullio, Printf
 
-export predict
-include("predict.jl")
+export spgp_pred
+include("spgp_pred.jl")
 
 export kernel
 include("kernel.jl")
+
+export dist, dist2
+include("dist.jl")
 
 end

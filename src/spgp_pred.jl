@@ -22,7 +22,7 @@
     σ² -- predictive variance of latent function
           (add noise if full variance is required)
 """
-function predict(y, x, xb, xt, hyp, ∇=1e-6)
+function spgp_pred(y, x, xb, xt, hyp, ∇=1e-6)
     n_observ, n_dim = size(x, 1), size(x, 2)
     n_pseudo = size(xb, 1)
     n_train = size(xt, 1)
